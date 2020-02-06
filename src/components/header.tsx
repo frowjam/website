@@ -4,8 +4,8 @@ import React, { FunctionComponent } from "react"
 const Header: FunctionComponent<{ siteTitle: string }> = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
+      borderBottom: "1px solid black",
     }}
   >
     <div
@@ -19,8 +19,8 @@ const Header: FunctionComponent<{ siteTitle: string }> = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
             textDecoration: `none`,
+            // color: "black",
           }}
         >
           {siteTitle}
