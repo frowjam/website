@@ -13,7 +13,7 @@ const NextEvent: FunctionComponent<{
         Our next Jam Session is on {date}, from{" "}
         <time className="dt-start" dateTime="2020-02-18 20:30">
           {startTime}
-        </time>
+        </time>{" "}
         -{" "}
         <time className="dt-start" dateTime="2020-02-18 22:30">
           {finishTime}
