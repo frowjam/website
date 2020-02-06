@@ -7,13 +7,19 @@ const NextEvent: FunctionComponent<{
   venue: string
 }> = ({ date, startTime, finishTime, venue }) => {
   return (
-    <section>
-      <h2>Our next jam session</h2>
-      <div>is on {date}</div>
-      <div>
-        from {startTime} - {finishTime}
-      </div>
-      <div>at {venue}</div>
+    <section className="h-event">
+      <h2 className="p-name">February Jam Session</h2>
+      <p>
+        Our next Jam Session is on {date}, from{" "}
+        <time className="dt-start" dateTime="2020-02-18 20:30">
+          {startTime}
+        </time>
+        -{" "}
+        <time className="dt-start" dateTime="2020-02-18 22:30">
+          {finishTime}
+        </time>
+        , at <span className="p-location">{venue}</span>.
+      </p>
     </section>
   )
 }
