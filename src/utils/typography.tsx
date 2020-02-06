@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: "12px",
   baseLineHeight: 1.666,
   headerFontFamily: [
-    "Lilita One",
+    "Titan One",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
