@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React, { FunctionComponent } from "react"
+import Logo from "../images/logo.svg"
 
 const Header: FunctionComponent<{ siteTitle: string }> = ({ siteTitle }) => (
   <header
@@ -12,18 +13,11 @@ const Header: FunctionComponent<{ siteTitle: string }> = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            textDecoration: `none`,
-            // color: "black",
-          }}
-        >
-          {siteTitle}
+        <Link to="/">
+          <Logo width="225px" height="150px" />
         </Link>
       </h1>
     </div>
