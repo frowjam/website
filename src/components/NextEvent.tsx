@@ -5,10 +5,11 @@ const NextEvent: FunctionComponent<{
   finishTime: string
   date: string
   venue: string
-}> = ({ date, startTime, finishTime, venue }) => {
+  title: string
+}> = ({ date, startTime, finishTime, venue, title }) => {
   return (
     <section className="h-event">
-      <h2 className="p-name">March Jam Session</h2>
+      <h2 className="p-name">{title || "Jam Session"}</h2>
       <p>
         Our next Jam Session is on {date}, from{" "}
         <time className="dt-start" dateTime="2020-03-17 20:30">
