@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `FrowJam`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Regular acoustic Jam Sessions for musicians based around Forest Row.`,
     author: `@gatsbyjs`,
   },
   plugins: [
