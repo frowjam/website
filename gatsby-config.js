@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `FrowJam`,
     description: `Regular acoustic Jam Sessions for musicians based around Forest Row.`,
-    author: `@gatsbyjs`,
+    author: `Drew Neil`,
   },
   plugins: [
     {
