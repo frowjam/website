@@ -6,7 +6,8 @@ const NextEvent: FunctionComponent<{
   date: string
   venue: string
   title: string
-}> = ({ date, startTime, finishTime, venue, title }) => {
+  url: string
+}> = ({ date, startTime, finishTime, venue, title, url }) => {
   return (
     <section className="h-event">
       <h2 className="p-name">{title || "Jam Session"}</h2>
@@ -20,6 +21,9 @@ const NextEvent: FunctionComponent<{
           {finishTime}
         </time>
         , at <span className="p-location">{venue}</span>.
+      </p>
+      <p>
+        <a href={url}>More details on Facebook</a>, where you can RSVP.
       </p>
     </section>
   )
