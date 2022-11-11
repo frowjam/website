@@ -8,8 +8,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <NextEvent
-      title={"November Jam Session"}
-      date={"Wednesday 9th November"}
+      title={"December Jam Session"}
+      date={"Wednesday 14th December"}
       startTime={"8:00pm"}
       finishTime={"10.00pm"}
       venue={"The Scout Hut, Forest Row"}
