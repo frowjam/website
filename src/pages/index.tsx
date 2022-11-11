@@ -13,6 +13,7 @@ const IndexPage = () => (
       startTime={"8:00pm"}
       finishTime={"10.00pm"}
       venue={"The Scout Hut, Forest Row"}
+      url={"https://fb.me/e/3EDBgYpx7"}
     />
   </Layout>
 )
