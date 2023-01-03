@@ -8,12 +8,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <NextEvent
-      title={"December Jam Session"}
-      date={"Wednesday 14th December"}
+      title={"January Jam Session"}
+      date={"Wednesday 11th January"}
       startTime={"8:00pm"}
       finishTime={"10.00pm"}
       venue={"The Scout Hut, Forest Row"}
-      url={"https://fb.me/e/3EDBgYpx7"}
+      url={"https://fb.me/e/3lP1qasuS"}
     />
   </Layout>
 )
