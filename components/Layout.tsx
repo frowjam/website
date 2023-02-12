@@ -8,7 +8,6 @@ export const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
   return (
     <div>
       <Head>
-        <link rel="icon" href="/images/frowjam-icon.png" />
         <meta
           name="description"
           content="Regular acoustic Jam Sessions for musicians based around Forest Row."
