@@ -1,4 +1,29 @@
 import React, { FunctionComponent } from "react"
+import { Temporal } from "temporal-polyfill"
+import { Intl } from "temporal-spec"
+
+const timeFormat: Intl.DateTimeFormatOptions = {
+  hour12: true,
+  hour: "numeric",
+  minute: "numeric",
+  second: undefined,
+}
+
+const dateFormat: Intl.DateTimeFormatOptions = {
+  weekday: "long",
+  month: "long",
+  day: "numeric",
+}
+
+function formatDate(dateString: string): string {
+  const plainDate = Temporal.PlainDate.from(dateString)
+  return plainDate.toLocaleString("en-GB", dateFormat)
+}
+
+function formatTime(timeString: string): string {
+  const plainTime = Temporal.PlainTime.from(timeString)
+  return plainTime.toLocaleString("en-GB", timeFormat)
+}
 
 const NextEvent: FunctionComponent<{
   startTime: string
@@ -12,18 +37,24 @@ const NextEvent: FunctionComponent<{
     <section className="h-event">
       <h2 className="text-2xl mb-4">{title || "Jam Session"}</h2>
       <p className="font-serif mb-4">
-        Our next Jam Session is on {date}, from{" "}
-        <time className="dt-start" dateTime="2020-03-17 20:30">
-          {startTime}
+        Our next Jam Session is on {formatDate(date)}, from{" "}
+        <time className="dt-start" dateTime={`${date} ${startTime}`}>
+          {formatTime(startTime)}
         </time>{" "}
         -{" "}
-        <time className="dt-start" dateTime="2020-03-17 22:30">
-          {finishTime}
+        <time className="dt-start" dateTime={`${date} ${finishTime}`}>
+          {formatTime(finishTime)}
         </time>
         , at <span className="p-location">{venue}</span>.
       </p>
       <p className="font-serif mb-4">
-        <a  className="text-blue-600 dark:text-blue-500 hover:underline" href={url}>More details on Facebook</a>, where you can RSVP.
+        <a
+          className="text-blue-600 dark:text-blue-500 hover:underline"
+          href={url}
+        >
+          More details on Facebook
+        </a>
+        , where you can RSVP.
       </p>
     </section>
   )
