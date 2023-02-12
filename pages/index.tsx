@@ -15,9 +15,9 @@ export default function Home() {
       </Head>
       <NextEvent
         title={"March Jam Session"}
-        date={"Wednesday 15th March"}
-        startTime={"8:00pm"}
-        finishTime={"10.00pm"}
+        date={"2023-03-15"}
+        startTime={"20:00"}
+        finishTime={"22:00"}
         venue={"The Scout Hut, Forest Row"}
         url="http://frowjam.co.uk"
       />
