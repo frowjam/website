@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FunctionComponent } from "react";
+import Image from "next/image"
+import Link from "next/link"
+import { FunctionComponent } from "react"
 
 const Header: FunctionComponent = () => (
   <header
@@ -9,13 +9,8 @@ const Header: FunctionComponent = () => (
       borderBottom: "1px solid black",
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+    <div className="max-w-4xl my-0 mx-auto">
+      <h1 className="m-0">
         <Link href="/">
           <Image
             priority
@@ -28,6 +23,6 @@ const Header: FunctionComponent = () => (
       </h1>
     </div>
   </header>
-);
+)
 
-export default Header;
+export default Header

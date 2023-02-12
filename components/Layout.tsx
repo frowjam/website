@@ -1,13 +1,12 @@
-import Head from "next/head";
-import { FunctionComponent, PropsWithChildren } from "react";
-import Header from "./Header";
-import styles from "./Layout.module.css";
+import Head from "next/head"
+import { FunctionComponent, PropsWithChildren } from "react"
+import Header from "./Header"
 
-export const siteTitle = "FrowJam";
+export const siteTitle = "FrowJam"
 
 export const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="icon" href="/images/frowjam-icon.png" />
         <meta
@@ -23,11 +22,15 @@ export const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <Header/>
-      <main>{children}</main>
-      <footer>© {new Date().getFullYear()}</footer>
+      <Header />
+      <div className="my-0 mx-auto max-w-4xl px-4 py-0">
+        <main>{children}</main>
+        <footer className="font-serif mb-4">
+          © {new Date().getFullYear()}
+        </footer>
+      </div>
     </div>
-  );
+  )
 }
 
-export default Layout;
+export default Layout
