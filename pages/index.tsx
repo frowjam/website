@@ -16,7 +16,7 @@ export default function Home() {
         startTime="20:00"
         finishTime={"22:00"}
         venue="The Scout Hut, Forest Row"
-        url="http://frowjam.co.uk"
+        url="https://fb.me/e/2IFU7NyHn"
       />
     </Layout>
   );
