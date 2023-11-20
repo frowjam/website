@@ -11,12 +11,12 @@ export default function Home() {
         <link rel="icon" href="/images/frowjam-icon.png" />
       </Head>
       <NextEvent
-        title="October Jam Session"
-        date="2023-10-18"
+        title="November Jam Session"
+        date="2023-11-22"
         startTime="20:00"
         finishTime="22:00"
         venue="The Scout Hut, Forest Row"
-        url="https://fb.me/e/162GRYblb"
+        url="https://fb.me/e/16UWwHcds"
       />
     </Layout>
   );
